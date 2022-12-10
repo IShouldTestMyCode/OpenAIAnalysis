@@ -284,6 +284,6 @@ poetry.toml
 # End of https://www.toptal.com/developers/gitignore/api/pycharm,python
 
 # Ignore ini files
-*.ini
+config.ini
 /.idea/vcs.xml
 .idea/
