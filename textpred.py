@@ -15,9 +15,10 @@
 from google.cloud import aiplatform
 from google.cloud.aiplatform.gapic.schema import predict
 from google.protobuf import json_format
-from google.protobuf.struct_pb2 import Value
+import google.protobuf.struct_pb2
 
 
+# noinspection PyUnresolvedReferences
 def predict_text_classification_single_label_sample(
     project: str,
     endpoint_id: str,
@@ -35,7 +36,7 @@ def predict_text_classification_single_label_sample(
     ).to_value()
     instances = [instance]
     parameters_dict = {}
-    parameters = json_format.ParseDict(parameters_dict, Value())
+    parameters = json_format.ParseDict(parameters_dict, google.protobuf.struct_pb2.Value())
     endpoint = client.endpoint_path(
         project=project, location=location, endpoint=endpoint_id
     )
