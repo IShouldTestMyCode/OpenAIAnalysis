@@ -285,5 +285,4 @@ poetry.toml
 
 # Ignore ini files
 config.ini
-/.idea/vcs.xml
 .idea/
