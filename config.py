@@ -1,3 +1,7 @@
+"""
+Create configuration variables.
+"""
+
 # noinspection PyCompatibility
 import configparser
 import logging
@@ -9,6 +13,7 @@ class Config:
     Configuration Object
     """
 
+    # noinspection PyShadowingBuiltins
     def __init__(self):
         self.config = configparser.ConfigParser()
         dir = os.getcwd()

@@ -1,5 +1,9 @@
+"""
+OpenAIAnalysis
+A software that provides tools to create a machine learning model to differentiate information about
+"""
+
 from config import Config
-import AITester
 import demoAPI
 
 config = Config()
