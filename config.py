@@ -46,6 +46,8 @@ class Config:
             self.project = self.config["GCP"]["project"]
             self.endpoint = self.config["GCP"]["endpoint-id"]
             self.location = self.config["GCP"]["location"]
+            self.real = self.config["Data"]["real"]
+            self.restKey = self.config["API"]["key"]
         except KeyError:
             logging.critical("Unable to retrieve configuration... Exiting.")
             exit(1)
